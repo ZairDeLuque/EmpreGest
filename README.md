@@ -19,7 +19,7 @@ EmpreGest pretende la organización debida de los negocios que esperan un escala
 
 ## 👥 Contribuye al proyecto
 
-Si desea aportar al proyecto, contáctenos en dev@aurora.studio o ingresa a nuestro servidor de Discord.
+Si desea aportar al proyecto, contáctenos en dev@aurora.studio o ingrese a nuestro servidor de Discord.
 
 [![Discord](https://img.shields.io/badge/Ingresa-Discord-blueviolet.svg)](https://discord.gg/GskcVphw5Z)
 
