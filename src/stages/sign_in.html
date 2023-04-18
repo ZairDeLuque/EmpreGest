@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Stylesheet add-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/signin.css">
+
+    <!--Icon-->
+    <link rel="shortcut icon" href="../icon/icon.ico" type="image/x-icon">
+
+    <title>EmpreGest - Iniciar Sesión</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #ffffff00; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);   user-select: none;">
+        <div class="container-fluid" data-aos="fade-down" data-aos-duration="3000">
+            <i class="bi-shop" style="font-size: 1.8rem; margin-right: .8rem; color:#ffc107;"></i>
+            <a class="navbar-brand" style="color:#ffc107;">EmpreGest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../main.html">Inicio</a>
+                </li>
+                </ul>
+            </div>
+            
+            <div class="d-flex">
+                <label style="color: white">¿Aun no tienes cuenta? <a href="../stages/sign_up.html" style="color: #ffc107">Ingresa aqui</a></label>
+            </div>
+        </div>
+    </nav>
+
+    <!--Background-->
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <!--Form-->
+    <div class="container mt-2 w-50" style="border-radius: 20px; z-index: 1; background-color: #00000090; color: rgb(110, 110, 110)">
+        <h3 data-aos="fade-up" data-aos-duration="3000" class="mt-4" style="color: rgb(110, 110, 110);">Iniciar <label style="color: #ffc107;"> sesión</label></h3>
+
+        <hr data-aos="fade-up" data-aos-duration="3000" class="hr-bw-2">
+
+        <form data-aos="fade-up" data-aos-duration="3000" action="../agents/accounts_control/sign_account.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <h5>Ingrese sus <label style="color: #ffc107;">credenciales:</label></h5>
+                </div>
+                <div class="col">
+                    <div class="d-flex justify-content-end">
+                        <label style="opacity: 0.5;">*Requerido.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label">*Correo:</label>
+                    <input name="email" class="form-control border-warning" type="email" required style="background-color: transparent; color: white;">
+                </div>
+                <div class="col mb-3">
+                    <label class="form-label">*Contraseña:</label>
+                    <input name="pass" class="form-control border-warning" type="password" required style="background-color: transparent; color: white;">
+                </div>
+            </div>
+
+            <hr class="hr-bw-2">
+
+            <div class="d-flex justify-content-end mb-2">
+                <button type="submit" class="btn btn-outline-warning mb-2">Crear cuenta</button>
+            </div>            
+        </form>
+    </div>
+
+    <!--Pie de pagina-->
+
+    <footer class="bd-footer py-2 mt-5 py-md-3" style="background-color: #000000;">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+            <div class="col-lg-3 mb-3">
+                <p class="mb-2" style="color: rgb(75, 75, 75);">Diseñado usando:</p>
+                <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="rgb(75, 75, 75)"></path></svg>
+                <span class="fs-5" style="color: rgb(75, 75, 75);">Bootstrap</span>
+                </a>
+                <ul class="list-unstyled small">
+                <li class="mb-2" style="color: rgb(75, 75, 75);">Codigo bajo licencia <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, documentacion <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-3" style="color: rgb(75, 75, 75);">
+                <h5>Aurora Studios</h5>
+                <hr class="hr-bw2" style="margin-top: 1rem;">
+                <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://zairdeluque.carrd.co/">ZairDeLuque</a></li>
+                <li class="mb-2"><a href="https://apocalix.carrd.co/">ApocalixDeLuque</a></li>
+                <li class="mb-2"><a href="https://www.youtube.com/@RJCodeAdvance">RJCodeAdvance</a></li>
+                <li class="mb-2"><a href="https://slashrichie.dev/">DevSlashRichie</a></li>
+                <li class="mb-2"><a>MariaSantana</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-3" style="color: rgb(75, 75, 75);">
+                <h5>Terceros:</h5>
+                <hr class="hr-bw2" style="margin-top: 1rem;">
+                <ul class="list-unstyled">
+                <li class="mb-2"><a href="https://getbootstrap.com/">Bootstrap 5</a></li>
+                <li class="mb-2"><a href="https://icons.getbootstrap.com/">Bootstrap Icons</a></li>
+                <li class="mb-2"><a href="https://michalsnik.github.io/aos/">AOS Library</a></li>
+                <li class="mb-2"><a href="https://www.mysql.com/">MySQL</a></li>
+                <li class="mb-2"><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+                <li class="mb-2"><a href="https://github.com/">GitHub</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts Add-->
+    <script src="../vendor/aos/dist/aos.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

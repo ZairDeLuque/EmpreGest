@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+.stars, .twinkling {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars {
+    background: #000 url('res/stars.png') repeat top center;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+.twinkling{
+    background: transparent url('res/twinkling.png') repeat top center;
+    z-index: -1;
+    animation: move-twink-back 250s linear infinite;
+}

@@ -1,0 +1,45 @@
+@import url('../vendor/bootstrap/css/bootstrap.min.css');
+@import url('../vendor/bootstrap-icons-1.10.4/font/bootstrap-icons.css');
+@import url('../vendor/aos/dist/aos.css');
+
+.hr-bw{
+    border: 0;
+    height: 1px;
+    background-color: white;
+    opacity: 1;
+}
+
+.hr-bw-2{
+    border: 0;
+    height: 1px;
+    background-color: rgb(40,40,40);
+    opacity: 1;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #161616;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ffc107;
+    border-radius: 20px;
+    border: 3px solid #161616;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 20px;
+    border: 3px solid #161616;
+}
