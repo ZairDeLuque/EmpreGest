@@ -1,6 +1,7 @@
 <?php 
 
 //Get data personal from form
+$username = $_POST['username'];
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];
 $age = $_POST['age'];
@@ -50,7 +51,7 @@ function check($mail){
 if (check($email) == true){
     require_once ('../add_account.php');
 
-    agreementAccount($name, $lastname, $age, $genre, $number, $email, $pass, $id, $code);
+    agreementAccount($username, $name, $lastname, $age, $genre, $number, $email, $pass, $id, $code);
 }
 else{
     die("Aurora Studios Services: El correo ya existe en la base de datos.");

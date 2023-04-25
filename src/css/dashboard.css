@@ -1,3 +1,21 @@
 body{
     background-color: #101010;
 }
+
+.btn-custom{
+    width: 4rem;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 10px;
+}
+  
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #161616;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 20px;
+    border: 3px solid #161616;
+}

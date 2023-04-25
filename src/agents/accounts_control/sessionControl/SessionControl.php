@@ -1,32 +1,16 @@
 <?php 
-
-function checkSessionLogin(){
-    session_start();
-
-    if (!isset($_SESSION['username']) || empty($_SESSION['username'])){
-        header('Location:../../../stages/sign_in.php');
-        exit;
+function createSession($name, $mail, $username){
+    if (session_status() != PHP_SESSION_ACTIVE){
+        session_start();
     }
-    else{
-        //Code for dashboard logged
-    }
-}
 
-function createSession($user, $namefull){
-    session_start();
-
-    $_SESSION['username'] = $user;
-    $_SESSION['name'] = $namefull;
+    $_SESSION['name'] = $name;
+    $_SESSION['email'] = $mail;
+    $_SESSION['username'] = $username;
     
+    header('Location:../../stages/session/dashboard.php');
+
     exit;
 }
 
-function destroySession(){
-    session_start();
-    session_unset();
-    session_destroy();
-
-    header('Location:../../../../main.html');
-    exit;
-}
 ?>
